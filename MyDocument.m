@@ -1,0 +1,211 @@
+//
+//  MyDocument.m
+//  PDF Optimizer
+//
+//  Created by Jason Terhorst on 12/24/10.
+//  Copyright 2010 Jason Terhorst. All rights reserved.
+//
+
+#import "MyDocument.h"
+
+@implementation MyDocument
+
+
+@synthesize openedDocument, thumbnails, currentPageImage;
+
+
+- (id)init
+{
+	self = [super init];
+	if (self)
+	{
+		// Add your subclass-specific initialization here.
+		// If an error occurs here, send a [self release] message and return nil.
+	}
+	return self;
+}
+
+- (NSString *)windowNibName
+{
+	return @"MyDocument";
+}
+
+- (void)windowControllerDidLoadNib:(NSWindowController *) aController
+{
+	[super windowControllerDidLoadNib:aController];
+	
+	NSLog(@"loaded nib. %d pages", [self.openedDocument pageCount]);
+	
+	[pageView setCurrentDocument:self.openedDocument];
+	[pageView setCurrentPage:0];
+	
+	
+	//[pagesList reloadData];
+	//[pagesList selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
+	[pageView setPageImage:[[self.thumbnails objectAtIndex:[pagesList selectedRow]] valueForKey:@"image"]];
+}
+
+- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
+{
+	NSData * outputData = [self.openedDocument dataRepresentation];
+	if (outputData != nil)
+		return outputData;
+	
+	if ( outError != NULL ) {
+		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
+	}
+	
+	return nil;
+}
+
+- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
+{
+	self.openedDocument = [[[PDFDocument alloc] initWithData:data] autorelease];
+	if (self.openedDocument == nil)
+		return NO;
+	
+	self.thumbnails = [NSMutableArray array];
+	
+	int x = 0;
+	
+	for (x = 0; x < [self.openedDocument pageCount]; x++) {
+		PDFPage * aPage = [self.openedDocument pageAtIndex:x];
+		NSImage * image = [[NSImage alloc] initWithData:[aPage dataRepresentation]];
+		float sourceWidth = [image size].width;
+		float sourceHeight = [image size].height;
+		
+		NSLog(@"fetching image...");
+		
+		if (sourceWidth < 1024 && sourceHeight < 1024)
+		{
+			NSLog(@"this page isn't very big. I'm not going to size it down. just rendering.");
+			
+			NSMutableDictionary * imageDict = [NSMutableDictionary dictionary];
+			[imageDict setObject:image forKey:@"image"];
+			[imageDict setObject:[NSNumber numberWithBool:YES] forKey:@"enabled"];
+			[self.thumbnails addObject:imageDict];
+		}
+		else
+		{
+			float imageSizeRatio, width, height;
+			
+			
+			if (sourceWidth > sourceHeight) {
+				imageSizeRatio = sourceWidth / 1024;
+				width = sourceWidth;
+				height = sourceHeight * imageSizeRatio;
+			}
+			else {
+				imageSizeRatio = sourceHeight / 1024;
+				height = sourceHeight;
+				width = sourceWidth * imageSizeRatio;
+			}
+			
+			NSImage *smallImage = [[[NSImage alloc] initWithSize:NSMakeSize(width, height)] autorelease];
+			[smallImage lockFocus];
+			[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
+			[image setSize:NSMakeSize(width, height)];
+			[image compositeToPoint:NSZeroPoint operation:NSCompositeCopy];
+			[smallImage unlockFocus];
+			
+			NSMutableDictionary * imageDict = [NSMutableDictionary dictionary];
+			[imageDict setObject:smallImage forKey:@"image"];
+			[imageDict setObject:[NSNumber numberWithBool:YES] forKey:@"enabled"];
+			[self.thumbnails addObject:imageDict];
+			
+			[smallImage release];
+		}
+		
+		[image release];
+	}
+	
+	
+	
+	if ( outError != NULL ) {
+		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
+	}
+	
+	return YES;
+}
+
+
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification
+{
+	//[pageView setCurrentPage:[pagesList selectedRow]];
+	[pageView setPageImage:[[self.thumbnails objectAtIndex:[pagesList selectedRow]] valueForKey:@"image"]];
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
+	if ([[aTableColumn identifier] isEqualToString:@"thumbnail"])
+		return [[self.thumbnails objectAtIndex:rowIndex] valueForKey:@"image"];
+	if ([[aTableColumn identifier] isEqualToString:@"enabled"])
+		return [[self.thumbnails objectAtIndex:rowIndex] valueForKey:@"enabled"];
+	
+	return nil;
+}
+
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)anObject forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
+	NSLog(@"obj: %@", [anObject description]);
+	
+	if ([[aTableColumn identifier] isEqualToString:@"thumbnail"])
+		[[self.thumbnails objectAtIndex:rowIndex] setObject:anObject forKey:@"image"];
+	if ([[aTableColumn identifier] isEqualToString:@"enabled"])
+		[[self.thumbnails objectAtIndex:rowIndex] setObject:anObject forKey:@"enabled"];
+}
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
+{
+	return [self.thumbnails count];
+}
+
+
+
+
+
+
+
+- (IBAction)exportDocument:(id)sender;
+{
+	
+	NSURL * outputURL = nil;
+	
+	NSSavePanel * outputSavePanel = [NSSavePanel savePanel];
+	[outputSavePanel setTitle:@"Select one or more PDFs to optimize"];
+	[outputSavePanel setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
+	if ([outputSavePanel runModal] == NSFileHandlingPanelOKButton)
+		outputURL = [outputSavePanel URL];
+	else
+		return;
+	
+	
+	
+	
+	PDFDocument * outputDocument = [[PDFDocument alloc] init];
+	
+	for (NSImage * anImage in self.thumbnails) {
+		PDFPage * aPage = [[PDFPage alloc] initWithImage:anImage];
+		
+		[outputDocument insertPage:aPage atIndex:[self.thumbnails indexOfObject:anImage]];
+		
+		[aPage release];
+	}
+	
+	//NSMutableArray * filePathComponents = [NSMutableArray array];
+	//[filePathComponents addObjectsFromArray:[inputURL pathComponents]];
+	
+	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];
+	
+	//[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
+	[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
+	
+	[outputDocument release];
+	
+}
+
+
+
+
+
+@end

@@ -1,0 +1,236 @@
+TPDF Optimizer
+v7
+r0
+t314940531.720496
+cCheck dependencies
+cProcessInfoPlistFile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Info.plist" PDF_Optimizer-Info.plist
+cCpResource "build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/Credits.rtf" English.lproj/Credits.rtf
+cCopyStringsFile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib"
+cCompileXIB "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib"
+cProcessPCH /var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch.gch PDF_Optimizer_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/MyDocument.o" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/main.o" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CEC364000000000000000EE
+t1290548800
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework/Quartz
+c000000004CAA740500000000000036E0
+t1286239237
+s14048
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/Credits.rtf
+c000000004D155D3C00000000000001B4
+t1293245756
+s436
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/InfoPlist.strings
+c000000004D155D3C000000000000002D
+t1293245756
+s45
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib
+c000000004D155D3C000000000002ADFA
+t1293245756
+s175610
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib
+c000000004D155D3C0000000000002935
+t1293245756
+s10549
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h
+c000000004D1562DC0000000000000116
+t1293247196
+s278
+i<Cocoa/Cocoa.h>
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m
+c000000004D1564A10000000000000ADB
+t1293247649
+s2779
+i"MyDocument.h"
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/PDF_Optimizer_Prefix.pch
+c000000004D155D3C000000000000009D
+t1293245756
+s157
+i<Cocoa/Cocoa.h>
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app
+t2
+s0
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Info.plist
+t1293247729
+s1326
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/MacOS/PDF Optimizer
+t2
+s0
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/PkgInfo
+t1293247729
+s8
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/Credits.rtf
+t1293247729
+s436
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1293247729
+s92
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/MainMenu.nib
+t1293247729
+s33347
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/MyDocument.nib
+t1293247729
+s3544
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/MyDocument.o
+t2
+s0
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/PDF Optimizer.LinkFileList
+c000000004D1564F10000000000000128
+t1293247729
+s296
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/main.o
+t1293247731
+s5040
+
+N/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m
+c000000004D155D3C0000000000000102
+t1293245756
+s258
+i<Cocoa/Cocoa.h>
+
+N/var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch.gch
+t1293247731
+s54306576
+
+NPDF_Optimizer-Info.plist
+c000000004D1564DF00000000000005C8
+t1293247711
+s1480
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies314940528#314940529#0(0"0(0#1#0"8742140096#0"0#
+
+CCompileC "build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/MyDocument.o" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314940531.592282
+e314940531.694320
+r0
+xCompileC
+xbuild/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/MyDocument.o
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:9:
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h:17: error: expected specifier-qualifier-list before 'PDFDocument'
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:14: error: no declaration of property 'openedDocument' found in the interface
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument windowControllerDidLoadNib:]':
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:41: error: request for member 'openedDocument' in something not a structure or union
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument dataOfType:error:]':
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:47: error: request for member 'openedDocument' in something not a structure or union
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument readFromData:ofType:error:]':
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: request for member 'openedDocument' in something not a structure or union
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: 'PDFDocument' undeclared (first use in this function)
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: (Each undeclared identifier is reported only once
+o/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: for each function it appears in.)
+lSLF07#2@84"Compile /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940531#314940531#0(1682"In file included from /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:9:/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h:17: error: expected specifier-qualifier-list before 'PDFDocument'/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:14: error: no declaration of property 'openedDocument' found in the interface/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument windowControllerDidLoadNib:]':/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:41: error: request for member 'openedDocument' in something not a structure or union/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument dataOfType:error:]':/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:47: error: request for member 'openedDocument' in something not a structure or union/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m: In function '-[MyDocument readFromData:ofType:error:]':/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: request for member 'openedDocument' in something not a structure or union/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: 'PDFDocument' undeclared (first use in this function)/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: (Each undeclared identifier is reported only once/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m:64: error: for each function it appears in.)6(4@54"Expected specifier-qualifier-list before 'PDFDocument'314940531#102#143#2(7@98"In file included from /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940531#18446744073709551615#0#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#9#0#9#0#0"0(13@134"Expected specifier-qualifier-list before 'PDFDocument' in /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h314940531#18446744073709551615#0#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h314939996#17#0#17#0#0"0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.h314939996#17#0#17#0#19"expected * before *0(4@66"No declaration of property 'openedDocument' found in the interface314940531#245#155#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#14#0#14#0#0"0(4@73"Request for member 'openedDocument' in something not a structure or union314940531#535#162#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#41#0#41#0#0"0(4@73"Request for member 'openedDocument' in something not a structure or union314940531#822#162#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#47#0#47#0#0"0(4@73"Request for member 'openedDocument' in something not a structure or union314940531#1118#162#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#64#0#64#0#0"0(4@53"'PDFDocument' undeclared (first use in this function)314940531#1280#142#0(6@76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m314940449#64#0#64#0#43"'*' undeclared (first use in this function)0(0#0#76"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m8741568032#1879"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-generated-files.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-own-target-headers.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-all-target-headers.hmap" -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-project-headers.hmap" "-F/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/include" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources/x86_64" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources" -include /var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch -c "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/MyDocument.m" -o "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/MyDocument.o"1#
+
+CCompileC "build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/main.o" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314940531.593252
+e314940531.720389
+r1
+xCompileC
+xbuild/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/main.o
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m314940531#314940531#0(0"0(0#0#70"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m8741391040#1867"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-generated-files.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-own-target-headers.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-all-target-headers.hmap" -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-project-headers.hmap" "-F/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/include" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources/x86_64" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources" -include /var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch -c "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/main.m" -o "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/Objects-normal/x86_64/main.o"0#
+
+CCompileXIB "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib"
+s314940529.071687
+e314940529.331979
+r1
+xCompileXIB
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib314940529#314940529#0(0"0(0#0#90"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib8733310464#451"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MainMenu.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCompileXIB "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib"
+s314940529.070909
+e314940529.241769
+r1
+xCompileXIB
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib
+lSLF07#2@39"CompileXIB English.lproj/MyDocument.xib314940529#314940529#0(0"0(0#0#92"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib8734605792#455"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/MyDocument.nib" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/MyDocument.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s314940529.070237
+e314940529.138902
+r1
+xCopyStringsFile
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings314940529#314940529#0(0"0(0#0#95"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/InfoPlist.strings8667697952#425"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj"0#
+
+CCpResource "build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/Credits.rtf" English.lproj/Credits.rtf
+s314940529.069428
+e314940529.078014
+r1
+xCpResource
+xbuild/Debug/PDF Optimizer.app/Contents/Resources/English.lproj/Credits.rtf
+xEnglish.lproj/Credits.rtf
+lSLF07#2@30"Copy English.lproj/Credits.rtf314940529#314940529#0(0"0(0#0#89"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/Credits.rtf29836824280170608#456"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/English.lproj/Credits.rtf" "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Resources/English.lproj"0#
+
+CLd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/MacOS/PDF Optimizer" normal x86_64
+r0
+
+CProcessInfoPlistFile "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Info.plist" PDF_Optimizer-Info.plist
+s314940529.065562
+e314940529.069347
+r1
+xProcessInfoPlistFile
+x/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Info.plist
+xPDF_Optimizer-Info.plist
+lSLF07#2@32"Process PDF_Optimizer-Info.plist314940529#314940529#0(0"0(0#0#88"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/PDF_Optimizer-Info.plist8741538400#409"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    builtin-infoPlistUtility PDF_Optimizer-Info.plist -genpkginfo "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch.gch PDF_Optimizer_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s314940529.332135
+e314940531.592011
+r1
+xProcessPCH
+x/var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch.gch
+xPDF_Optimizer_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile PDF_Optimizer_Prefix.pch314940529#314940531#0(0"0(0#0#88"/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/PDF_Optimizer_Prefix.pch8741547904#1740"    cd "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-generated-files.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-own-target-headers.hmap" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-all-target-headers.hmap" -iquote "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/PDF Optimizer-project-headers.hmap" "-F/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/include" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources/x86_64" "-I/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/PDF Optimizer.build/Debug/PDF Optimizer.build/DerivedSources" -c "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/PDF_Optimizer_Prefix.pch" -o /var/folders/CF/CFkh8m8kH84deUvZatw3zU+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/PDF_Optimizer_Prefix-faxloflrkzglaaeacffmrmxcagwk/PDF_Optimizer_Prefix.pch.gch0#
+
+CTouch "/Users/jason/Documents/programming/PlanningCenter/PDF Optimizer/build/Debug/PDF Optimizer.app"
+r0
+

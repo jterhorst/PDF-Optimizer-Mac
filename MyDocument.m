@@ -40,8 +40,6 @@
 	[pageView setCurrentPage:0];
 	
 	
-	//[pagesList reloadData];
-	//[pagesList selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
 	[pageView setPageImage:[[self.thumbnails objectAtIndex:[pagesList selectedRow]] valueForKey:@"image"]];
 }
 
@@ -131,7 +129,6 @@
 
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification
 {
-	//[pageView setCurrentPage:[pagesList selectedRow]];
 	[pageView setPageImage:[[self.thumbnails objectAtIndex:[pagesList selectedRow]] valueForKey:@"image"]];
 }
 
@@ -153,6 +150,8 @@
 		[[self.thumbnails objectAtIndex:rowIndex] setObject:anObject forKey:@"image"];
 	if ([[aTableColumn identifier] isEqualToString:@"enabled"])
 		[[self.thumbnails objectAtIndex:rowIndex] setObject:anObject forKey:@"enabled"];
+	
+	[self updateChangeCount:NSChangeDone];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
@@ -180,8 +179,6 @@
 		return;
 	
 	
-	
-	
 	PDFDocument * outputDocument = [[PDFDocument alloc] init];
 	
 	for (NSImage * anImage in self.thumbnails) {
@@ -192,15 +189,14 @@
 		[aPage release];
 	}
 	
-	//NSMutableArray * filePathComponents = [NSMutableArray array];
-	//[filePathComponents addObjectsFromArray:[inputURL pathComponents]];
-	
 	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];
 	
-	//[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	
 	[outputDocument release];
+	
+	
+	[self updateChangeCount:NSChangeCleared];
 	
 }
 

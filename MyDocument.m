@@ -45,9 +45,28 @@
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
+	PDFDocument * outputDocument = [[[PDFDocument alloc] init] autorelease];
+	
+	for (NSMutableDictionary * imageObj in self.thumbnails) {
+		if ([[imageObj objectForKey:@"enabled"] boolValue] == YES)
+		{
+			PDFPage * aPage = [[PDFPage alloc] initWithImage:[imageObj objectForKey:@"image"]];
+			[outputDocument insertPage:aPage atIndex:[self.thumbnails indexOfObject:imageObj]];
+			[aPage release];
+		}
+	}
+	
+	//QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];
+	
+	//[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
+	
+	return [outputDocument dataRepresentation];
+	
+	/*
 	NSData * outputData = [self.openedDocument dataRepresentation];
 	if (outputData != nil)
 		return outputData;
+	 */
 	
 	if ( outError != NULL ) {
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
@@ -171,7 +190,7 @@
 	NSURL * outputURL = nil;
 	
 	NSSavePanel * outputSavePanel = [NSSavePanel savePanel];
-	[outputSavePanel setTitle:@"Select one or more PDFs to optimize"];
+	[outputSavePanel setTitle:@"Save as PDF"];
 	[outputSavePanel setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
 	if ([outputSavePanel runModal] == NSFileHandlingPanelOKButton)
 		outputURL = [outputSavePanel URL];

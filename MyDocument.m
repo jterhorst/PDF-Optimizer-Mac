@@ -181,12 +181,13 @@
 	
 	PDFDocument * outputDocument = [[PDFDocument alloc] init];
 	
-	for (NSImage * anImage in self.thumbnails) {
-		PDFPage * aPage = [[PDFPage alloc] initWithImage:anImage];
-		
-		[outputDocument insertPage:aPage atIndex:[self.thumbnails indexOfObject:anImage]];
-		
-		[aPage release];
+	for (NSMutableDictionary * imageObj in self.thumbnails) {
+		if ([[imageObj objectForKey:@"enabled"] boolValue] == YES)
+		{
+			PDFPage * aPage = [[PDFPage alloc] initWithImage:[imageObj objectForKey:@"image"]];
+			[outputDocument insertPage:aPage atIndex:[self.thumbnails indexOfObject:imageObj]];
+			[aPage release];
+		}
 	}
 	
 	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];

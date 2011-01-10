@@ -14,7 +14,9 @@
 
 @interface JTPDFPageView : NSView
 {
-	
+	NSImage * pageImage;
+	PDFDocument * currentDocument;
+	NSInteger currentPage;
 }
 
 @property (nonatomic, retain) NSImage * pageImage;

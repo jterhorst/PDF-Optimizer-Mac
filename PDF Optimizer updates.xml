@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>PDF Optimizer updates</title>
+    <link>http://www.jterhorst.com/pdfoptimizer</link>
+    <description>Updates for PDF Optimizer</description>
+    <generator>Feeder 1.5.10(880) http://reinventedsoftware.com/feeder/</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <language>en</language>
+    <copyright>2010, Jason Terhorst</copyright>
+    <pubDate>Mon, 10 Jan 2011 13:51:09 -0600</pubDate>
+    <lastBuildDate>Mon, 10 Jan 2011 13:51:09 -0600</lastBuildDate>
+    <atom:link href="http://www.jterhorst.com/pdfoptimizer/updates/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PDF Optimizer 0.2</title>
+      <pubDate>Mon, 10 Jan 2011 13:51:04 -0600</pubDate>
+      <enclosure url="http://www.jterhorst.com/pdfoptimizer/updates/PDFOptimizer0.2.zip" length="458027" type="application/zip" sparkle:version="0.2" sparkle:dsaSignature="MC4CFQCw2qluQ4jW3y6JXF2FFZBZE3rUgwIVAKeLlNMskIO6Hq12Tuchv9sQY6/3" sparkle:md5Sum="5075b158c4a16683da668cd4a55203ea"/>
+      <guid isPermaLink="false">pdf-optimizer-02</guid>
+    </item>
+    <item>
+      <title>PDF Optimizer 0.1</title>
+      <pubDate>Mon, 10 Jan 2011 13:46:30 -0600</pubDate>
+      <enclosure url="http://www.jterhorst.com/pdfoptimizer/updates/PDFOptimizer0.1.zip" length="458026" type="application/zip" sparkle:version="0.1" sparkle:dsaSignature="MCwCFCTdY2L0EFrLcUsi5+hzylFmwpwVAhRkkjg5uXSWt1hN8sWaqFo8MdH0wA==" sparkle:md5Sum="70b260cd79b5f06c01c925962546f742"/>
+      <guid isPermaLink="false">pdf-optimizer-01</guid>
+    </item>
+  </channel>
+</rss>

@@ -209,7 +209,7 @@
 		}
 	}
 	
-	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];
+	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115avg" withExtension:@"qfilter"]];
 	
 	[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	

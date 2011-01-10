@@ -14,12 +14,27 @@
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
+		960DBE3612DAC5C40005707A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
+		960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 960DBE3B12DAC8170005707A /* dsa_pub.pem */; };
 		9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9695CA1B12C599F30006BB99 /* Quartz.framework */; };
 		9695CAAE12C693900006BB99 /* JTPDFPageView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAC12C693900006BB99 /* JTPDFPageView.h */; };
 		9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAD12C693900006BB99 /* JTPDFPageView.m */; };
-		9695CAED12C699D70006BB99 /* Reduce to 115 dpi average quality.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEC12C699D70006BB99 /* Reduce to 115 dpi average quality.qfilter */; };
-		9695CAEF12C699DE0006BB99 /* Reduce to 150 dpi low quality.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEE12C699DE0006BB99 /* Reduce to 150 dpi low quality.qfilter */; };
+		9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEC12C699D70006BB99 /* 115avg.qfilter */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		960DBE3912DAC5C50005707A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				960DBE3612DAC5C40005707A /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -36,11 +51,14 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* PDF_Optimizer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PDF_Optimizer-Info.plist"; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* PDF Optimizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF Optimizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		960DBDFF12DAC0AF0005707A /* 115low.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 115low.qfilter; sourceTree = "<group>"; };
+		960DBE0012DAC13B0005707A /* 115high.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 115high.qfilter; sourceTree = "<group>"; };
+		960DBE1212DAC55C0005707A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		960DBE3B12DAC8170005707A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		9695CA1B12C599F30006BB99 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		9695CAAC12C693900006BB99 /* JTPDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = JTPDFPageView.h; sourceTree = "<group>"; };
 		9695CAAD12C693900006BB99 /* JTPDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPDFPageView.m; sourceTree = "<group>"; };
-		9695CAEC12C699D70006BB99 /* Reduce to 115 dpi average quality.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Reduce to 115 dpi average quality.qfilter"; sourceTree = "<group>"; };
-		9695CAEE12C699DE0006BB99 /* Reduce to 150 dpi low quality.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Reduce to 150 dpi low quality.qfilter"; sourceTree = "<group>"; };
+		9695CAEC12C699D70006BB99 /* 115avg.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 115avg.qfilter; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,7 @@
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */,
+				960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				960DBE1212DAC55C0005707A /* Sparkle.framework */,
 				9695CA1B12C599F30006BB99 /* Quartz.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -118,8 +138,10 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9695CAEC12C699D70006BB99 /* Reduce to 115 dpi average quality.qfilter */,
-				9695CAEE12C699DE0006BB99 /* Reduce to 150 dpi low quality.qfilter */,
+				960DBE3B12DAC8170005707A /* dsa_pub.pem */,
+				960DBE0012DAC13B0005707A /* 115high.qfilter */,
+				9695CAEC12C699D70006BB99 /* 115avg.qfilter */,
+				960DBDFF12DAC0AF0005707A /* 115low.qfilter */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* PDF_Optimizer-Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
@@ -148,6 +170,7 @@
 				8D15AC2B0486D014006FF6A4 /* Resources */,
 				8D15AC300486D014006FF6A4 /* Sources */,
 				8D15AC330486D014006FF6A4 /* Frameworks */,
+				960DBE3912DAC5C50005707A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -192,8 +215,8 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
-				9695CAED12C699D70006BB99 /* Reduce to 115 dpi average quality.qfilter in Resources */,
-				9695CAEF12C699DE0006BB99 /* Reduce to 150 dpi low quality.qfilter in Resources */,
+				9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */,
+				960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +277,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -271,6 +298,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PDF_Optimizer_Prefix.pch;

@@ -19,6 +19,10 @@
 {
 	IBOutlet NSTableView * pagesList;
 	IBOutlet JTPDFPageView * pageView;
+	
+	PDFDocument * openedDocument;
+	NSMutableArray * thumbnails;
+	NSImage * currentPageImage;
 }
 
 @property (nonatomic, retain) PDFDocument * openedDocument;

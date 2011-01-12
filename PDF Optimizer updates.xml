@@ -8,9 +8,15 @@
     <docs>http://blogs.law.harvard.edu/tech/rss</docs>
     <language>en</language>
     <copyright>2010, Jason Terhorst</copyright>
-    <pubDate>Mon, 10 Jan 2011 13:51:09 -0600</pubDate>
-    <lastBuildDate>Mon, 10 Jan 2011 13:51:09 -0600</lastBuildDate>
+    <pubDate>Tue, 11 Jan 2011 21:41:15 -0600</pubDate>
+    <lastBuildDate>Tue, 11 Jan 2011 21:41:15 -0600</lastBuildDate>
     <atom:link href="http://www.jterhorst.com/pdfoptimizer/updates/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PDF Optimizer 0.3</title>
+      <pubDate>Tue, 11 Jan 2011 21:41:01 -0600</pubDate>
+      <enclosure url="http://www.jterhorst.com/pdfoptimizer/updates/PDFOptimizer0.3.zip" length="639013" type="application/zip" sparkle:version="0.3" sparkle:dsaSignature="MCwCFBuSYqIrjWpIoWahtfOdaYwBtDiWAhR3KDErljMPi0mzeF1Aihmlb97APw==" sparkle:md5Sum="872d973f6a5b089135394bfdb18e31a7"/>
+      <guid isPermaLink="false">pdf-optimizer-03</guid>
+    </item>
     <item>
       <title>PDF Optimizer 0.2</title>
       <pubDate>Mon, 10 Jan 2011 13:51:04 -0600</pubDate>

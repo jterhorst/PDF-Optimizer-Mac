@@ -17,6 +17,7 @@
 		960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
 		960DBE3612DAC5C40005707A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
 		960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 960DBE3B12DAC8170005707A /* dsa_pub.pem */; };
+		960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 960DBF7B12DD53060005707A /* pdf_folder.icns */; };
 		9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9695CA1B12C599F30006BB99 /* Quartz.framework */; };
 		9695CAAE12C693900006BB99 /* JTPDFPageView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAC12C693900006BB99 /* JTPDFPageView.h */; };
 		9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAD12C693900006BB99 /* JTPDFPageView.m */; };
@@ -55,6 +56,7 @@
 		960DBE0012DAC13B0005707A /* 115high.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 115high.qfilter; sourceTree = "<group>"; };
 		960DBE1212DAC55C0005707A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		960DBE3B12DAC8170005707A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		960DBF7B12DD53060005707A /* pdf_folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pdf_folder.icns; sourceTree = "<group>"; };
 		9695CA1B12C599F30006BB99 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		9695CAAC12C693900006BB99 /* JTPDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = JTPDFPageView.h; sourceTree = "<group>"; };
 		9695CAAD12C693900006BB99 /* JTPDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPDFPageView.m; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				960DBF7B12DD53060005707A /* pdf_folder.icns */,
 				960DBE3B12DAC8170005707A /* dsa_pub.pem */,
 				960DBE0012DAC13B0005707A /* 115high.qfilter */,
 				9695CAEC12C699D70006BB99 /* 115avg.qfilter */,
@@ -217,6 +220,7 @@
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */,
 				960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */,
+				960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

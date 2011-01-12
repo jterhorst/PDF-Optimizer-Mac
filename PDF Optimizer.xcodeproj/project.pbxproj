@@ -19,7 +19,6 @@
 		960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 960DBE3B12DAC8170005707A /* dsa_pub.pem */; };
 		960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 960DBF7B12DD53060005707A /* pdf_folder.icns */; };
 		9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9695CA1B12C599F30006BB99 /* Quartz.framework */; };
-		9695CAAE12C693900006BB99 /* JTPDFPageView.h in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAC12C693900006BB99 /* JTPDFPageView.h */; };
 		9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAD12C693900006BB99 /* JTPDFPageView.m */; };
 		9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEC12C699D70006BB99 /* 115avg.qfilter */; };
 /* End PBXBuildFile section */
@@ -233,7 +232,6 @@
 			files = (
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
-				9695CAAE12C693900006BB99 /* JTPDFPageView.h in Sources */,
 				9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

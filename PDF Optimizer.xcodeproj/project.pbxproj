@@ -20,6 +20,9 @@
 		960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 960DBF7B12DD53060005707A /* pdf_folder.icns */; };
 		960DBF9E12DD56600005707A /* PDFOptimizerAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 960DBF9C12DD56600005707A /* PDFOptimizerAppDelegate.h */; };
 		960DBF9F12DD56600005707A /* PDFOptimizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960DBF9D12DD56600005707A /* PDFOptimizerAppDelegate.m */; };
+		960DBFB312DD5ABD0005707A /* PFMoveApplication.h in Sources */ = {isa = PBXBuildFile; fileRef = 960DBFB112DD5ABD0005707A /* PFMoveApplication.h */; };
+		960DBFB412DD5ABD0005707A /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 960DBFB212DD5ABD0005707A /* PFMoveApplication.m */; };
+		960DC03012DD5C180005707A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DC02F12DD5C180005707A /* Security.framework */; };
 		9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9695CA1B12C599F30006BB99 /* Quartz.framework */; };
 		9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAD12C693900006BB99 /* JTPDFPageView.m */; };
 		9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEC12C699D70006BB99 /* 115avg.qfilter */; };
@@ -60,6 +63,9 @@
 		960DBF7B12DD53060005707A /* pdf_folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pdf_folder.icns; sourceTree = "<group>"; };
 		960DBF9C12DD56600005707A /* PDFOptimizerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = PDFOptimizerAppDelegate.h; sourceTree = "<group>"; };
 		960DBF9D12DD56600005707A /* PDFOptimizerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFOptimizerAppDelegate.m; sourceTree = "<group>"; };
+		960DBFB112DD5ABD0005707A /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		960DBFB212DD5ABD0005707A /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+		960DC02F12DD5C180005707A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		9695CA1B12C599F30006BB99 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		9695CAAC12C693900006BB99 /* JTPDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = JTPDFPageView.h; sourceTree = "<group>"; };
 		9695CAAD12C693900006BB99 /* JTPDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPDFPageView.m; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */,
 				960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */,
+				960DC03012DD5C180005707A /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				960DC02F12DD5C180005707A /* Security.framework */,
 				960DBE1212DAC55C0005707A /* Sparkle.framework */,
 				9695CA1B12C599F30006BB99 /* Quartz.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
@@ -123,6 +131,8 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				960DBFB112DD5ABD0005707A /* PFMoveApplication.h */,
+				960DBFB212DD5ABD0005707A /* PFMoveApplication.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 				9695CAAC12C693900006BB99 /* JTPDFPageView.h */,
@@ -241,6 +251,8 @@
 				9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */,
 				960DBF9E12DD56600005707A /* PDFOptimizerAppDelegate.h in Sources */,
 				960DBF9F12DD56600005707A /* PDFOptimizerAppDelegate.m in Sources */,
+				960DBFB312DD5ABD0005707A /* PFMoveApplication.h in Sources */,
+				960DBFB412DD5ABD0005707A /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

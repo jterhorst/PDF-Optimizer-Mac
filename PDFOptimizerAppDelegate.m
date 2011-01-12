@@ -8,8 +8,23 @@
 
 #import "PDFOptimizerAppDelegate.h"
 
+#import "PFMoveApplication.h"
+
 
 @implementation PDFOptimizerAppDelegate
+
+
+- (id)init
+{
+	self = [super init];
+	if (self != nil)
+	{
+		// Enable this for production...
+		PFMoveToApplicationsFolderIfNecessary();
+	}
+	
+	return self;
+}
 
 - (void)applicationDidBecomeActive:(NSNotification *)aNotification
 {

@@ -21,6 +21,8 @@
 	{
 		// Add your subclass-specific initialization here.
 		// If an error occurs here, send a [self release] message and return nil.
+		
+		quality = 3.0;
 	}
 	return self;
 }
@@ -240,9 +242,21 @@
 
 - (IBAction)changeQuality:(id)sender;
 {
-	NSLog(@"quality: %f", [qualitySlider floatValue]);
+	NSLog(@"quality: %f", [sender floatValue]);
 	
+	quality = [sender floatValue];
 	
+	if (quality == 1.0)
+		[qualityLabel setStringValue:@"Quality: Low"];
+	else if (quality == 2.0)
+		[qualityLabel setStringValue:@"Quality: Average"];
+	else
+		[qualityLabel setStringValue:@"Quality: High"];
+	
+	[qualityLabelFull setStringValue:[qualityLabel stringValue]];
+	
+	[qualitySlider setFloatValue:quality];
+	[qualitySliderFull setFloatValue:quality];
 }
 
 

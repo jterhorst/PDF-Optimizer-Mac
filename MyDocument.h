@@ -21,7 +21,9 @@
 	IBOutlet NSView * fullView;
 	
 	IBOutlet NSSlider * qualitySlider;
+	IBOutlet NSSlider * qualitySliderFull;
 	IBOutlet NSTextField * qualityLabel;
+	IBOutlet NSTextField * qualityLabelFull;
 	
 	
 	IBOutlet NSTableView * pagesList;
@@ -32,6 +34,8 @@
 	NSImage * currentPageImage;
 	
 	IBOutlet NSWindow * docWindow;
+	
+	float quality;
 }
 
 @property (nonatomic, retain) PDFDocument * openedDocument;
@@ -42,7 +46,7 @@
 - (IBAction)showSummaryView:(id)sender;
 - (IBAction)showFullView:(id)sender;
 
-
+- (IBAction)changeQuality:(id)sender;
 
 - (IBAction)exportDocument:(id)sender;
 

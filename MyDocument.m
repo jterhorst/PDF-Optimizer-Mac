@@ -41,7 +41,24 @@
 	
 	
 	[pageView setPageImage:[[self.thumbnails objectAtIndex:[pagesList selectedRow]] valueForKey:@"image"]];
+	
+	
+	if (docWindow == nil)
+		NSLog(@"no window");
+	if (summaryView == nil)
+		NSLog(@"no view");
+	
+	
+	NSRect oldFrame = [docWindow frame];
+	NSRect newFrame = [summaryView frame];
+	newFrame.origin.x = oldFrame.origin.x;
+	newFrame.origin.y = oldFrame.origin.y;
+	
+	[docWindow setFrame:newFrame display:YES];
+	
+	[[docWindow contentView] addSubview:summaryView];
 }
+
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
@@ -181,6 +198,52 @@
 
 
 
+
+- (IBAction)showSummaryView:(id)sender;
+{
+	if ([summaryView superview] != nil)
+		return;
+	
+	if ([fullView superview])
+		[fullView removeFromSuperview];
+	
+	NSRect oldFrame = [docWindow frame];
+	NSRect newFrame = [summaryView frame];
+	newFrame.origin.x = oldFrame.origin.x - ((newFrame.size.width - oldFrame.size.width) / 2);
+	newFrame.origin.y = oldFrame.origin.y - (newFrame.size.height - oldFrame.size.height);
+	
+	[docWindow setFrame:newFrame display:YES animate:YES];
+	
+	[[docWindow contentView] addSubview:summaryView];
+}
+
+- (IBAction)showFullView:(id)sender;
+{
+	if ([fullView superview] != nil)
+		return;
+	
+	if ([summaryView superview])
+		[summaryView removeFromSuperview];
+	
+	NSRect oldFrame = [docWindow frame];
+	NSRect newFrame = [fullView frame];
+	newFrame.origin.x = oldFrame.origin.x - ((newFrame.size.width - oldFrame.size.width) / 2);
+	newFrame.origin.y = oldFrame.origin.y - (newFrame.size.height - oldFrame.size.height);
+	
+	[docWindow setFrame:newFrame display:YES animate:YES];
+	
+	[[docWindow contentView] addSubview:fullView];
+}
+
+
+
+
+- (IBAction)changeQuality:(id)sender;
+{
+	NSLog(@"quality: %f", [qualitySlider floatValue]);
+	
+	
+}
 
 
 

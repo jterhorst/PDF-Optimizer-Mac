@@ -75,7 +75,15 @@
 		}
 	}
 	
-	//QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"Reduce to 115 dpi average quality" withExtension:@"qfilter"]];
+	/*
+	QuartzFilter * quartzFilter = nil;
+	if (quality == 1.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115low" withExtension:@"qfilter"]];
+	else if (quality == 2.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115avg" withExtension:@"qfilter"]];
+	else if (quality == 3.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115high" withExtension:@"qfilter"]];
+	*/
 	
 	//[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	
@@ -263,7 +271,6 @@
 
 - (IBAction)exportDocument:(id)sender;
 {
-	
 	NSURL * outputURL = nil;
 	
 	NSSavePanel * outputSavePanel = [NSSavePanel savePanel];
@@ -286,7 +293,13 @@
 		}
 	}
 	
-	QuartzFilter * quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115avg" withExtension:@"qfilter"]];
+	QuartzFilter * quartzFilter = nil;
+	if (quality == 1.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115low" withExtension:@"qfilter"]];
+	else if (quality == 2.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115avg" withExtension:@"qfilter"]];
+	else if (quality == 3.0)
+		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115high" withExtension:@"qfilter"]];
 	
 	[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	

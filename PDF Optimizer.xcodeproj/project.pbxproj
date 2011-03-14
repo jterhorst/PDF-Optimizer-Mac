@@ -205,6 +205,9 @@
 /* Begin PBXProject section */
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Jason Terhorst";
+			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "PDF Optimizer" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;

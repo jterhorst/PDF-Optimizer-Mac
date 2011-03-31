@@ -3,3 +3,11 @@ build/
 *.pbxuser
 
 .DS_Store
+
+xcuserdata/
+
+*.xcuserdatad
+
+*.xcuserdatad/
+
+xcuserdata

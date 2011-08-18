@@ -23,6 +23,8 @@
 		960DBFB312DD5ABD0005707A /* PFMoveApplication.h in Sources */ = {isa = PBXBuildFile; fileRef = 960DBFB112DD5ABD0005707A /* PFMoveApplication.h */; };
 		960DBFB412DD5ABD0005707A /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 960DBFB212DD5ABD0005707A /* PFMoveApplication.m */; };
 		960DC03012DD5C180005707A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DC02F12DD5C180005707A /* Security.framework */; };
+		96229DD913FDA80B0059760B /* 115high.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 960DBE0012DAC13B0005707A /* 115high.qfilter */; };
+		96229DDB13FDA80D0059760B /* 115low.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 960DBDFF12DAC0AF0005707A /* 115low.qfilter */; };
 		9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9695CA1B12C599F30006BB99 /* Quartz.framework */; };
 		9695CAAF12C693900006BB99 /* JTPDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695CAAD12C693900006BB99 /* JTPDFPageView.m */; };
 		9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */ = {isa = PBXBuildFile; fileRef = 9695CAEC12C699D70006BB99 /* 115avg.qfilter */; };
@@ -236,7 +238,9 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				96229DDB13FDA80D0059760B /* 115low.qfilter in Resources */,
 				9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */,
+				96229DD913FDA80B0059760B /* 115high.qfilter in Resources */,
 				960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */,
 				960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */,
 			);

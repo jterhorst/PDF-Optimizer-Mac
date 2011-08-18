@@ -298,9 +298,12 @@
 		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115low" withExtension:@"qfilter"]];
 	else if (quality == 2.0)
 		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115avg" withExtension:@"qfilter"]];
-	else if (quality == 3.0)
+	else
 		quartzFilter = [QuartzFilter quartzFilterWithURL:[[NSBundle mainBundle] URLForResource:@"115high" withExtension:@"qfilter"]];
 	
+    if (quartzFilter == nil)
+        [[NSException exceptionWithName:@"No quartz filter" reason:@"Cannot be nil" userInfo:nil] raise];
+    
 	[outputDocument writeToURL:outputURL withOptions:[NSDictionary dictionaryWithObject:quartzFilter forKey:@"QuartzFilter"]];
 	
 	[outputDocument release];

@@ -272,15 +272,19 @@
 - (IBAction)exportDocument:(id)sender;
 {
 	NSURL * outputURL = nil;
+	if (self.fileURL)
+		outputURL = self.fileURL;
 	
-	NSSavePanel * outputSavePanel = [NSSavePanel savePanel];
-	[outputSavePanel setTitle:@"Save as PDF"];
-	[outputSavePanel setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
-	if ([outputSavePanel runModal] == NSFileHandlingPanelOKButton)
-		outputURL = [outputSavePanel URL];
-	else
-		return;
-	
+	if (!outputURL)
+	{
+		NSSavePanel * outputSavePanel = [NSSavePanel savePanel];
+		[outputSavePanel setTitle:@"Save as PDF"];
+		[outputSavePanel setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
+		if ([outputSavePanel runModal] == NSFileHandlingPanelOKButton)
+			outputURL = [outputSavePanel URL];
+		else
+			return;
+	}
 	
 	PDFDocument * outputDocument = [[PDFDocument alloc] init];
 	

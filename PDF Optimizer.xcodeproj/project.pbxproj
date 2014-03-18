@@ -14,9 +14,6 @@
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
-		960DBE3612DAC5C40005707A /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 960DBE1212DAC55C0005707A /* Sparkle.framework */; };
-		960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 960DBE3B12DAC8170005707A /* dsa_pub.pem */; };
 		960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 960DBF7B12DD53060005707A /* pdf_folder.icns */; };
 		960DBF9E12DD56600005707A /* PDFOptimizerAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 960DBF9C12DD56600005707A /* PDFOptimizerAppDelegate.h */; };
 		960DBF9F12DD56600005707A /* PDFOptimizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960DBF9D12DD56600005707A /* PDFOptimizerAppDelegate.m */; };
@@ -37,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				960DBE3612DAC5C40005707A /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +56,6 @@
 		8D15AC370486D014006FF6A4 /* PDF Optimizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF Optimizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960DBDFF12DAC0AF0005707A /* 115low.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 115low.qfilter; sourceTree = "<group>"; };
 		960DBE0012DAC13B0005707A /* 115high.qfilter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 115high.qfilter; sourceTree = "<group>"; };
-		960DBE1212DAC55C0005707A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		960DBE3B12DAC8170005707A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		960DBF7B12DD53060005707A /* pdf_folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pdf_folder.icns; sourceTree = "<group>"; };
 		960DBF9C12DD56600005707A /* PDFOptimizerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = PDFOptimizerAppDelegate.h; sourceTree = "<group>"; };
 		960DBF9D12DD56600005707A /* PDFOptimizerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFOptimizerAppDelegate.m; sourceTree = "<group>"; };
@@ -81,7 +75,6 @@
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				9695CA1C12C599F30006BB99 /* Quartz.framework in Frameworks */,
-				960DBE1312DAC55C0005707A /* Sparkle.framework in Frameworks */,
 				960DC03012DD5C180005707A /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				960DC02F12DD5C180005707A /* Security.framework */,
-				960DBE1212DAC55C0005707A /* Sparkle.framework */,
 				9695CA1B12C599F30006BB99 /* Quartz.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -158,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				960DBF7B12DD53060005707A /* pdf_folder.icns */,
-				960DBE3B12DAC8170005707A /* dsa_pub.pem */,
 				960DBE0012DAC13B0005707A /* 115high.qfilter */,
 				9695CAEC12C699D70006BB99 /* 115avg.qfilter */,
 				960DBDFF12DAC0AF0005707A /* 115low.qfilter */,
@@ -241,7 +232,6 @@
 				96229DDB13FDA80D0059760B /* 115low.qfilter in Resources */,
 				9695CAED12C699D70006BB99 /* 115avg.qfilter in Resources */,
 				96229DD913FDA80B0059760B /* 115high.qfilter in Resources */,
-				960DBE3C12DAC8170005707A /* dsa_pub.pem in Resources */,
 				960DBF7C12DD53060005707A /* pdf_folder.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +309,7 @@
 				INFOPLIST_FILE = "PDF_Optimizer-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "PDF Optimizer";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -337,6 +328,7 @@
 				INFOPLIST_FILE = "PDF_Optimizer-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "PDF Optimizer";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
